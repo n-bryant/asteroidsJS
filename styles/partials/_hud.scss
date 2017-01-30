@@ -1,0 +1,25 @@
+.hud {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.hud div {
+  color: white;
+  text-align: center;
+}
+
+.ship-dashboard {
+  bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+}
+.ammo, .fuel {
+  text-align: center;
+  width: 50%;
+}

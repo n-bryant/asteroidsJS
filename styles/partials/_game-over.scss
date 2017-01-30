@@ -1,0 +1,49 @@
+.game-over {
+  background: $secondaryColor;
+  border-radius: 25px;
+  height: 335px;
+  left: 50%;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  z-index: 1;
+
+  h1 {
+    animation: flash 1s infinite;
+    margin: .5em auto;
+  }
+
+  p {
+    margin: 0 0 1em 0;
+  }
+}
+
+.game-over button {
+  background: $tertiaryColor;
+  border-radius: 25px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 2px;
+  width: 80%;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    background: rgba(255,255,255,.5);
+    border: 5px solid rgba(0,0,0,.5);
+  }
+}
+
+@keyframes flash {
+  50% {
+    opacity: .75;
+  }
+  100% {
+    opacity: .0;
+  }
+}

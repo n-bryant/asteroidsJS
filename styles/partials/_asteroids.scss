@@ -1,0 +1,35 @@
+aside {
+  border: 2px solid $astNormal;
+  width: 5em;
+  height: 4em;
+  position: absolute;
+  border-bottom: none;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 56px;
+    height: 58px;
+    left: 11px;
+    bottom: -30px;
+    border: 2px solid $astNormal;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+  }
+
+  &.shot {
+    display: none;
+  }
+}
+
+aside.hit {
+  background-color: $astHit;
+
+  &:after {
+    background-color: $astHit;
+  }
+}

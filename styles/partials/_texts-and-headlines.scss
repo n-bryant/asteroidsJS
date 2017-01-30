@@ -1,0 +1,26 @@
+body {
+  color: $tertiaryColor;
+}
+
+div {
+  font: 32px $primaryFont;
+}
+
+.game-over {
+  h1 {
+    font-size: 75px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  button {
+    color: $secondaryColor;
+    font: 50px $primaryFont;
+
+    &:active {
+      color: rgba(0,0,0,.5);
+    }
+  }
+}

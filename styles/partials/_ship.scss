@@ -1,0 +1,25 @@
+.missile {
+  background: red;
+  border: 2px solid red;
+  height: 4px;
+  transform: translateX(-3px);
+  position: absolute;
+  width: 2px;
+}
+
+#ship {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  /*border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 50px solid white;*/
+  /*box-shadow: 0 13px 6px -7px #ffbb66;*/
+  text-align: center;
+  z-index: 1;
+
+  #ship.crash {
+      background: $offOrange;
+      /*border-bottom-color: #ec8f39;*/
+  }
+}
