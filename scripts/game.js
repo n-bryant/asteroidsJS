@@ -74,20 +74,23 @@
       // establish behaviors for arrow keyups
         if (event.keyCode === 38) { // up
           accelerating = true;
+          ship.fuel--;
           increaseThrust();
         } else if (event.keyCode === 40) { // down
             accelerating = false;
             if (ship.velocity > 0) {
+              ship.fuel--;
               decreaseThrust();
             }
         } else if (event.keyCode === 39) { // right
             ship.angle+=15;
+            ship.fuel--;
             shipRotate();
         } else if (event.keyCode === 37) { // left
             ship.angle-=15;
+            ship.fuel--;
             shipRotate();
         }
-        ship.fuel--;
         updateFuelGuage();
       } else {
         outOfFuel();
