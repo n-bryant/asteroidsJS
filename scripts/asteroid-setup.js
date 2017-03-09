@@ -2,14 +2,14 @@
     'use strict';
 
     /**
-     * This code is all given to you. It sets up the creation of
+     * Sets up the creation of
      * the asteroids at random intervals and with random properties.
      *
      * When the "crash" event is fired on the <main> element this
      * adding of asteroids will stop!
      */
 
-    var maxAsteroids = 50; // in other words... difficulty level
+    var maxAsteroids = 50; // difficulty level
     var main = document.querySelector('main');
     var ship = document.querySelector('#ship');
     var style = document.documentElement.appendChild(document.createElement("style"));
