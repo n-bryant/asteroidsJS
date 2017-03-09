@@ -66,8 +66,6 @@
      * 39 = right
      * 40 = down
      *
-     * @param  {Event} event   The "keyup" event object with a bunch of data in it
-     * @return {void}          In other words, no need to return anything
      */
     function handleKeys(event) {
       if (ship.fuel > 0) {
@@ -386,20 +384,11 @@
     }
 
 
-
-    /** ************************************************************************
-     *             These functions and code are given to you.
-     *
-     *                   !!! DO NOT EDIT BELOW HERE !!!
-     ** ************************************************************************/
-
      const loopHandle = setInterval(gameLoop, 20);
      const timeLoopHandle = setInterval(gameTime, 1000);
 
      /**
-      * Executes the code required when a crash has occurred. You should call
-      * this function when a collision has been detected with the asteroid that
-      * was hit as the only argument.
+      * Executes the code required when a crash has occurred. 
       *
       * @param  {HTMLElement} asteroidHit The HTML element of the hit asteroid
       * @return {void}
